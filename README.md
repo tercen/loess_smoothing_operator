@@ -1,46 +1,31 @@
-# Template R operator for Tercen
-
-The `Template R operator` is a template repository for the creation of R operators in Tercen. An overview of steps for developing an operator are:
-
-1. create a github repo
-2. install tercen_studio
-3. login to tercen_studio
-4. git clone the newly created repo
-5. start developing in R in tercen_studio
-6. add R packages to the repo
-7. push to the github repo
-8. go to tercen and install the operator
-
-More information can be found in [Tercen app builder's guide](https://tercen.github.io/appbuilders-guide/).
-
-Below is the operator README standard structure:
+# LOESS smoothing operator
 
 ##### Description
 
-The `Template R operator` is a template repository for the creation of R operators in Tercen.
+The `loess_smoothing_operator` performs a curve fitting of y values against x values based on a local regression (LOESS/LOWESS).
 
 ##### Usage
 
 Input projection|.
 ---|---
-`x-axis`        | type, description 
-`y-axis`        | type, description 
-`row`           | type, description 
-`column`        | type, description 
-`colors`        | type, description 
-`labels`        | type, description 
+`x-axis`        | numeric, x values, per cell
+`y-axis`        | numeric, y values, per cell
+
+Input parameters|.
+---|---
+`n_preds`        | numeric, number of points to generate predictions for (length or a regular sequence along x's range).
+`span`        | numeric, span parameter for loess smoothing (higher = smoother). 
 
 Output relations|.
 ---|---
-`output_var`        | output relation
-`Operator view`        | view of the Shiny application
+`x_pred`        | x values used for predictions, per cell
+`y_pred`        | predicted y values, per cell
 
 ##### Details
 
-Details on the computation.
+This computation is based on the [loess R function](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/loess).
 
 ##### See Also
 
-[template_shiny_operator](https://github.com/tercen/template_shiny_operator)
-, [template_docker_operator](https://github.com/tercen/template_docker_operator)
+[lm_operator](https://github.com/tercen/lm_operator)
 

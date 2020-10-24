@@ -1,10 +1,23 @@
 {
-  "name": "Template R operator",
-  "description": "Return the medium value of a cell",
-  "tags": ["template"],
+  "name": "LOESS smoothing",
+  "description": "Performs a loess curve fitting.",
+  "tags": ["data visualisation", "smoothing", "modelling"],
   "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/template_R_operator"],
-  "properties": []
+  "urls": ["https://github.com/tercen/loess_smoothing_operator"],
+  "properties": [
+    {
+    "kind": "DoubleProperty",
+    "name": "n_preds",
+    "defaultValue": 1000,
+    "description": "Number of points to generate predictions for (length or a regular sequence along x's range)."
+    },
+    {
+    "kind": "DoubleProperty",
+    "name": "span",
+    "defaultValue": 0.75,
+    "description": "Span parameter for loess smoothing (higher = smoother)."
+    }  
+  ]
 }
 
 
