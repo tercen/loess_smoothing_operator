@@ -1,6 +1,6 @@
 {
-  "name": "LOESS smoothing",
-  "description": "Performs a loess curve fitting.",
+  "name": "LOESS",
+  "description": "Locally Weighted Scatterplot Smoothing:  Calculates a smooth line through a timeplot or scatter plot to help you to see relationship between variables and foresee trends. Used in regression analysis.",
   "tags": ["data visualisation", "smoothing", "modelling"],
   "authors": ["tercen"],
   "urls": ["https://github.com/tercen/loess_smoothing_operator"],
