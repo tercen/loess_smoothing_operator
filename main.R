@@ -14,7 +14,7 @@ do.loess <- function(df, n_preds, span) {
   return(df_out)
 }
 
-(ctx = tercenCtx())
+ctx <- tercenCtx()
 
 n_preds <- 1000
 if(!is.null(ctx$op.value('n_preds'))) n_preds <- as.numeric(ctx$op.value('n_preds'))
