@@ -2,6 +2,13 @@
   "kind": "OperatorUnitTest",
   "name": "LOESS smoothing",
   "namespace": "ds4",
+  "propertyValues": [
+    {
+    "kind": "PropertyValue",
+    "name": "n_preds",
+    "value": "100"
+    }
+  ], 
   "inputDataUri": "c04_simple_measurement2_design.tsv",
   "outputDataUri": ["table1.csv"],
   "columns": [],
