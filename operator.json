@@ -1,6 +1,6 @@
 {
   "name": "LOESS",
-  "description": "Locally Weighted Scatterplot Smoothing:  Calculates a smooth line through a timeplot or scatter plot to help you to see relationship between variables and foresee trends. Used in regression analysis.",
+  "description": "Calculates a smooth line through a scatter plot to help see the relationship between variables and foresee trends, using Locally Weighted Scatterplot Smoothing.",
   "tags": [
     "data visualisation",
     "machine learning"
